@@ -16,23 +16,24 @@ body{
 
 /*regole header  */
 header{
-    height: 400px;
     background-color: rgb(30,36,95);
+    background-image: url(../img/background-header.png);
+    background-position: 110% 100%;
+    background-repeat: no-repeat;
+    background-size: 1000px;
 }
 
 .banner{
     position: relative;
-    background-image: url(../img/background-header.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: calc(100% - 75px);
+    height: 500px;
     margin-top: 30px;
 }
 
 .container_banner{
     position: absolute;
     left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
     width: 30%;
 }
 
@@ -43,14 +44,13 @@ header{
 
 .bottone_banner{
     text-decoration: none;
-    position: absolute;
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
     background-color: rgb(125,214,0);
     font-size: 14px;
     color: white;
-    display: block;
+    display: inline-block;
 }
 
 /* REGOLE BARRA NAVIGAZIONE */
@@ -142,9 +142,9 @@ h4{
 
 .column h2{
     color: rgb(125,214,0);
-    font-size: 30px;
-    margin-bottom: 20px;
-
+    font-size: 22px;
+    max-width: 300px;
+    margin: 20px auto;
 }
 
 .column hr{
@@ -189,13 +189,13 @@ h4{
 footer{
     position: relative;
     background-color: lightgrey;
-    height: 150px;
+    padding: 55px 0;
 }
 
 footer h2{
     display: inline-block;
-    line-height: 150px;
     margin-left: 7%;
+    line-height: 40px;
 }
 
 .struttura_piano{
@@ -211,12 +211,18 @@ footer h2{
     width: 55%;
 }
 .bottone_footer{
+    display: inline-block;
     text-decoration: none;
     border-radius: 5px;
-    padding: 15px;
-    margin-top: 15px;
+    padding:0 15px;
     background-color: rgb(125,214,0);
     font-size: 14px;
     color: white;
-    display: block;
+    line-height: 40px;
+}
+
+.help{
+    position: fixed;
+    bottom: 0;
+    right: 10%;
 }
