@@ -16,17 +16,41 @@ body{
 
 /*regole header  */
 header{
-    height: 300px;
+    height: 400px;
     background-color: rgb(30,36,95);
 }
 
 .banner{
+    position: relative;
     background-image: url(../img/background-header.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    height: calc(100% - 50px);
+    height: calc(100% - 75px);
     margin-top: 30px;
+}
+
+.container_banner{
+    position: absolute;
+    left: 7%;
+    width: 30%;
+}
+
+.titolo_header{
+    color: white;
+    font-size: 35px;
+}
+
+.bottone_banner{
+    text-decoration: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: rgb(125,214,0);
+    font-size: 14px;
+    color: white;
+    display: block;
 }
 
 /* REGOLE BARRA NAVIGAZIONE */
@@ -57,7 +81,7 @@ nav li{
 }
 
 nav ul{
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 50px;
 }
 
@@ -88,10 +112,21 @@ nav ul{
 
 /*reole generali main */
 .title{
-    background-color: lightgrey;
-    height: 100px;
+    background-color: rgb(215,215,215);
+    /* height: 100px; */
+    text-align: center;
 }
 
+h1{
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+h4{
+    margin: auto;
+    line-height: 50px;
+    color: grey;
+}
 .section_1,.section_2{
     background-color: pink;
     border: 1px solid black;
