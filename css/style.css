@@ -110,10 +110,9 @@ nav ul{
     padding-right: 8px;
 }
 
-/*reole generali main */
+/*regole titolo main*/
 .title{
     background-color: rgb(215,215,215);
-    /* height: 100px; */
     text-align: center;
 }
 
@@ -127,11 +126,8 @@ h4{
     line-height: 50px;
     color: grey;
 }
-.section_1,.section_2{
-    background-color: pink;
-    border: 1px solid black;
-}
 
+/* regole generalielementi in float */
 .row::after{
     content: "";
     display: table;
@@ -140,21 +136,61 @@ h4{
 
 .column{
     float: left;
-    margin: 20px;
-    background-color: red;
-    height: 300px;
+    margin: 50px 20px;
+    text-align: center;
 }
 
+.column h2{
+    color: rgb(125,214,0);
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.column hr{
+    width: 20%;
+    margin: auto;
+}
+
+.column p{
+    color: grey;
+    margin: 20px 0;
+}
+
+.divisore{
+    width: 95%;
+    margin: auto;
+}
+/* colonne section_1 */
 .section_1 .column{
     width: calc(100% / 3 - 40px);
 }
 
+.section_1 img{
+    height: 150px;
+    width: auto;
+}
+
+/* colonne section_2 */
 .section_2 .column{
     width: calc(50% - 40px);
+}
+
+.montagna{
+    width: 100%;
+    height: auto;
+}
+
+.section_2 .column{
+    text-align: left;
 }
 
 /* footer */
 footer{
     background-color: lightgrey;
-    height: 100px;
+}
+
+footer h2{
+    line-height: 100px;
+    margin-left: 7%;
 }
