@@ -14,18 +14,79 @@ body{
     margin: 0 auto;
 }
 
-/* header */
+/*regole header  */
 header{
-    background-color: blue;
-    height: 400px;
+    height: 300px;
+    background-color: rgb(30,36,95);
 }
 
-nav{
-    background-color: grey;
-    height: 50px;
+.banner{
+    background-image: url(../img/background-header.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100% - 50px);
+    margin-top: 30px;
 }
 
-/* main */
+/* REGOLE BARRA NAVIGAZIONE */
+nav img{
+    margin-top: 5px;
+}
+
+nav::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* parte sinistra nav */
+.links{
+    float: left;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    margin:5px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav ul{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+/* parte destra nav */
+.opzioni{
+    float: right;
+    margin-top: 15px;
+}
+
+.bottone{
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.login{
+    border: 1px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.piano{
+    background-color: rgb(125,214,0);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*reole generali main */
 .title{
     background-color: lightgrey;
     height: 100px;
