@@ -1,0 +1,44 @@
+/* regole pagina */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.margini{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+header{
+    background-color: blue;
+    height: 400px;
+}
+
+nav{
+    background-color: grey;
+    height: 50px;
+}
+
+/* main */
+.title{
+    background-color: lightgrey;
+    height: 100px;
+}
+
+section{
+    background-color: pink;
+    height: 400px;
+    border: 1px solid black;
+}
+
+/* footer */
+footer{
+    background-color: lightgrey;
+    height: 100px;
+}
