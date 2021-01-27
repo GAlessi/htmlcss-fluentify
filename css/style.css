@@ -10,7 +10,7 @@ body{
 }
 
 .margini{
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -31,10 +31,30 @@ nav{
     height: 100px;
 }
 
-section{
+.section_1,.section_2{
     background-color: pink;
-    height: 400px;
     border: 1px solid black;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    margin: 20px;
+    background-color: red;
+    height: 300px;
+}
+
+.section_1 .column{
+    width: calc(100% / 3 - 40px);
+}
+
+.section_2 .column{
+    width: calc(50% - 40px);
 }
 
 /* footer */
