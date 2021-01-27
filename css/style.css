@@ -187,10 +187,36 @@ h4{
 
 /* footer */
 footer{
+    position: relative;
     background-color: lightgrey;
+    height: 150px;
 }
 
 footer h2{
-    line-height: 100px;
+    display: inline-block;
+    line-height: 150px;
     margin-left: 7%;
+}
+
+.struttura_piano{
+    position: relative;
+    float: right;
+    color: grey;
+    margin-right: 7%;
+    text-align: center;
+}
+
+.bottoni{
+    display: inline-block;
+    width: 55%;
+}
+.bottone_footer{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: rgb(125,214,0);
+    font-size: 14px;
+    color: white;
+    display: block;
 }
